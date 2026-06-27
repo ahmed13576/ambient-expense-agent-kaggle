@@ -20,7 +20,7 @@ flowchart TD
     
     PS -->|OIDC Push Subscription| AR["Vertex AI Agent Runtime\n(Stateful Engine)"]:::agent
     
-    AR -->|Auto-Approve| DB_Store[("Backend System\n(Approved)")]:::external
+    AR -->|"Auto-Approve (< $100)"| DB_Store[("Backend System\n(Approved)")]:::external
     
     AR -.->|Requires Manager Escalation\n(State: Paused)| DB_Session[("Agent Runtime\nSession Store")]:::gcp
     
@@ -53,13 +53,13 @@ stateDiagram-v2
     state CheckThreshold {
         direction LR
         IsAmount {
-            < $100
-            >= $100
+            Under_100: "Amount < $100"
+            Over_100: "Amount >= $100"
         }
     }
     
-    CheckThreshold --> AutoApprove : Amount < $100
-    CheckThreshold --> SecurityCheckpoint : Amount >= $100
+    CheckThreshold --> AutoApprove : "Amount < $100"
+    CheckThreshold --> SecurityCheckpoint : "Amount >= $100"
     
     state SecurityCheckpoint {
         direction LR

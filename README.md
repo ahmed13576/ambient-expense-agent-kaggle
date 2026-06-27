@@ -6,7 +6,7 @@
   </p>
   <p>
     <a href="https://cloud.google.com/vertex-ai"><img src="https://img.shields.io/badge/Google%20Cloud-Vertex%20AI-4285F4?style=for-the-badge&logo=googlecloud" alt="Google Cloud"></a>
-    <a href="https://github.com/google/adk"><img src="https://img.shields.io/badge/Agent%20Development%20Kit-v2.0-0F9D58?style=for-the-badge" alt="ADK"></a>
+    <a href="https://adk.dev/"><img src="https://img.shields.io/badge/Agent%20Development%20Kit-v2.0-0F9D58?style=for-the-badge" alt="ADK"></a>
     <a href="https://fastapi.tiangolo.com/"><img src="https://img.shields.io/badge/FastAPI-Dashboard-009688?style=for-the-badge&logo=fastapi" alt="FastAPI"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge" alt="License"></a>
   </p>
@@ -38,7 +38,7 @@ flowchart TD
     
     PS -->|OIDC Push Subscription| AR["Vertex AI Agent Runtime\n(Stateful Engine)"]:::agent
     
-    AR -->|Auto-Approve (< $100)| DB_Store[("Backend System\n(Approved)")]:::external
+    AR -->|"Auto-Approve (< $100)"| DB_Store[("Backend System\n(Approved)")]:::external
     
     AR -.->|Requires Manager Escalation\n(State: Paused)| DB_Session[("Agent Runtime\nSession Store")]:::gcp
     
