@@ -1,0 +1,13 @@
+{
+  "remote_agent_runtime_id": "projects/327663548819/locations/us-east1/reasoningEngines/5481267774602870784",
+  "deployment_target": "agent_runtime",
+  "is_a2a": false,
+  "deployment_timestamp": "2026-06-24T14:07:37.159113+00:00",
+  "pending_operation": {
+    "operation_name": "projects/327663548819/locations/us-east1/reasoningEngines/5481267774602870784/operations/6518557283448782848",
+    "project": "project-f9540f8f-d01e-47d3-a36",
+    "location": "us-east1",
+    "deployment_target": "agent_runtime",
+    "started_at": "2026-06-24T14:12:39.945911+00:00"
+  }
+}
