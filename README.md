@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://ibb.co/XfBD6b4p" width="100" alt="Google Developers Logo">
+  <img src="https://i.ibb.co/4wy2C7fM/repo-icon-1782566943228.jpg" width="100" alt="Google Developers Logo">
   <h1>AI Agents Intensive: Ambient Expense Agent</h1>
   <p>
     <b>My portfolio submission for the Kaggle 5-Day AI Agents Intensive Vibecoding Course with Google</b>
